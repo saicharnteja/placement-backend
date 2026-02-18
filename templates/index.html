@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Placement Prediction Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+<h1>🎓 Student Placement Prediction Dashboard</h1>
+
+<div class="card">
+<h2>Add Student Details</h2>
+<input type="text" id="name" placeholder="Student Name">
+<input type="number" id="cgpa" placeholder="CGPA">
+<input type="number" id="skills" placeholder="Skill Score">
+<input type="number" id="aptitude" placeholder="Aptitude Score">
+<input type="number" id="comm" placeholder="Communication Score">
+<button onclick="addStudent()">Predict Placement</button>
+</div>
+
+<div class="card">
+<h2>Student Records</h2>
+<table>
+<tr>
+<th>Name</th>
+<th>CGPA</th>
+<th>Skill</th>
+<th>Aptitude</th>
+<th>Communication</th>
+<th>Prediction</th>
+</tr>
+<tbody id="studentTable"></tbody>
+</table>
+</div>
+
+<div class="card">
+<h2>Placement Analytics</h2>
+<canvas id="placementChart"></canvas>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
