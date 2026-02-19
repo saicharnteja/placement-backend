@@ -12,7 +12,7 @@ function predict(){
     let aptitude=document.getElementById("aptitude").value;
     let comm=document.getElementById("comm").value;
 
-    fetch("http://127.0.0.1:5000/addstudent",{
+   fetch("https://placement-backend-xxxx.onrender.com/predict"),{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({
