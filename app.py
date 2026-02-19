@@ -4,7 +4,9 @@ import mysql.connector
 
 app = Flask(__name__)
 CORS(app)
-
+@app.route('/')
+def home():
+    return "Placement Prediction API is Running Successfully 🚀"
 # ✅ HOME PAGE ROUTE
 @app.route('/')
 def home():
